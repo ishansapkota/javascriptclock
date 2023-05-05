@@ -1,0 +1,348 @@
+html, img, video, iframe {
+    filter: invert(1) hue-rotate(180deg);
+}
+html{
+    box-sizing: border-box;
+  }
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+
+/* ANALOG  CLOCK OF NEPAL*/
+
+#clockNepal{
+    position: relative;
+    margin: auto;
+    
+    background: url(download.png);
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+}
+
+#hour1, #minute1, #second1{
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+#hour1{
+   
+    width: 4px;
+    height: 45px;
+    top: 55px;
+    left: 49.6%;
+    
+}
+#minute1{
+
+    width: 3px;
+    height: 84px;
+    top: 15px;
+    left: 49.5%;
+    
+}
+#second1{
+    width: 2px;
+    height: 88px;
+    top: 11px;
+    left: 50%;
+    background: red;
+   
+   
+}
+
+/* ANALOG CLOCK FOR LONDON */
+
+
+#clockLondon{
+    margin: auto;
+    position: relative;
+    background: url(londonclock.png);
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    
+}
+#hour2, #minute2, #second2{
+    position: absolute;
+    transform-origin: bottom;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#hour2{
+    background: black;
+    height: 36px;
+    width: 3px;
+    top: 64px;
+    left: 98.5px;
+    
+}
+
+#minute2{
+    background: black;
+    height: 77px;
+    width: 3px;
+    top: 23px;
+    left: 98.5px;
+}
+
+#second2{
+    background: red;
+    height: 81px;
+    width: 2px;
+    left: 99.1px;
+    top: 19px;
+}
+
+
+/*ANALOG CLOCK FOR NEW YORK */
+
+#clockNewYork{
+    background: url(newyork.jpg);
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    position: relative;    
+   
+}
+
+#hour3, #minute3, #second3{
+    position: absolute;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+
+#hour3{
+    background: black;
+    height: 35px;
+    width: 3px;
+    top: 65px;
+    left: 117px;
+}
+
+#minute3{
+    background: black;
+    height: 73px;
+    width: 2px;
+    top: 26px;
+    left: 117.4px;
+    opacity: 0.9;
+}
+
+#second3{
+    background: red;
+    height: 83px;
+    width: 2px;
+    top: 16px;
+    left: 117.4px;
+    opacity: 0.8;
+}
+
+#newyorkTime{
+    font-size: larger;
+}
+
+/* DIGITAL CLOCK FOR LA */
+
+    #clockLA{
+        
+       display: flex;
+       margin: auto;
+       padding-left: 400px;
+    }
+
+    #clockLA div{
+        position: relative;
+        margin: 0 5px;
+        -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+        margin-bottom: 60px;
+    }
+
+    #clockLA div span{
+        position: relative;
+        display: block;
+        width: 100px;
+        height: 80px;
+        background: #2196f3;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        z-index:  10;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+    }
+
+    #clockLA div span:nth-child(2){
+        height:30px;
+        font-size: 15px;
+        letter-spacing: 5px;
+        font-weight: 500;
+        z-index: 9;
+        box-shadow: none;
+        background: #127fd6;
+        text-transform: uppercase;
+    }
+
+/* ANALOG CLOCK FOR ROME */
+
+#clockRome{
+    position: relative;
+    background: url(romeclock.jpg);
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#hour5, #minute5, #second5{
+    position: absolute;
+    border-radius: 20px;;
+    transform-origin: bottom;
+}
+
+#hour5{
+    height: 35px;
+    width: 2.5px;
+    top: 68px;
+    left: 98.5px;
+    background: black;
+}
+    
+
+
+
+#minute5{
+    height: 82px;
+    width: 2.5px;
+    top: 21px;
+    left: 98.5px;
+    background: black;
+}
+
+#second5{
+    height: 93px;
+    width: 1.5px;
+    top: 10px;
+    left: 99px;
+    background: rgb(255, 0, 0);
+    opacity: 0.8;
+}
+
+
+/*FOR EUROS KICKOFF TIMER*/
+
+.btn-secondary{
+    margin-top: 50px;
+    background-color: #0d6efd;
+}
+
+/* 
+.eurosKickoff{
+        
+    display: flex;
+    margin: auto;
+ }
+ .eurosKickoff div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+    margin-bottom: 60px;
+}
+.eurosKickoff div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #2196f3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    z-index:  10;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+.eurosKickoff div span:nth-child(2){
+    height:30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+} */
+
+div .eurosKickoff
+{
+    display: inherit;
+    margin: auto;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+    margin-bottom: 60px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.eurosKickoff div:nth-child(2){
+    height:30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+}
+
+div #day6{
+    height: 120px;
+    width: 88px;
+    background:linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+}
+
+
+div #hour6
+{
+    height: 120px;
+    width: 88px;
+    background: linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+
+div #minute6
+{
+    height: 120px;
+    width: 88px;
+    background:linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+
+div #second6
+{
+    height: 120px;
+    width: 95px;
+    background: linear-gradient(transparent, #2196f3);
+    text-align: center;
+}
